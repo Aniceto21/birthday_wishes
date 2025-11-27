@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday — Didi 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stage">
+    <audio id="bgMusic" loop autoplay src="song.mp3"></audio>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1 class="name">Happy Birthday, <span>PANKI</span> 🎂</h1>
+        <p class="subtitle">To the best sister — today we celebrate you, your light, and all your dreams.</p>
+        <div class="controls">
+          <button id="surpriseBtn" class="btn primary">Click for Surprise 🎁</button>
+          <button id="musicToggle" class="btn ghost" aria-pressed="false">▶️ Play Music</button>
+        </div>
+      </div>
+      <div class="sparkles" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section id="surpriseSection" class="panel hidden">
+        <div class="card">
+          <h2>Surprise! ✨</h2>
+          <p class="message">Wishing you a year of adventures, laughter, and dreams coming true. Love you forever!</p>
+          <div class="slideshow" id="slideshow">
+            <img src="img1.jpg" alt="mem1">
+            <img src="img2.jpg" alt="mem2">
+            <img src="img3.jpg" alt="mem3">
+          </div>
+        </div>
+      </section>
+
+      <section id="wishes" class="panel hidden">
+        <h3>Wishes & Notes</h3>
+        <div class="grid">
+          <article class="wish">You're my guiding star — thank you for everything.</article>
+          <article class="wish">May this year bring new joys and beautiful surprises.</article>
+          <article class="wish">Keep smiling — the world is brighter because of you.</article>
+        </div>
+      </section>
+     <section id="moreMemoriesSection" class="panel hidden">
+        <div class="card">
+          <div class="slideshow" id="slideshow2">
+            <img src="img4.jpg" alt="mem4">
+            <img src="img5.jpeg" alt="mem5">
+            <img src="img6.jpg" alt="mem6">
+          </div>
+        </div>
+      </section>
+      <section id="final" class="panel hidden">
+        <div class="final-card">
+          <h3>One last thing...</h3>
+          <button id="playMsg" class="btn primary">Play Special Message 💖</button>
+          <p class="small"> <video controls autoplay muted>
+          <source src="vid.mp4" type="video/mp4" height="30" width="60">
+          </video></p>
+        </div>
+      </section>
+    </main>
+
+    <div id="confetti" class="confetti"></div>
+
+ 
+    <footer class="credit">Made with ❤️ <small>Aniceto Cunha</small></footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
